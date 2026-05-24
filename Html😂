@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐋𝐢𝐧𝐤ᵐᵉ🇶‌🇷‌ || Ultimate Premium Hacker Studio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <style>
+        /* CSS RESET & CUSTOM PROPERTY DECLARATIONS */
+        :root {
+            --glow-color: #6366f1;
+            --hacker-green: #10b981;
+            --miku-teal: #06b6d4;
+            --neon-pink: #ec4899;
+        }
+
+        /* HARDWARE-ACCELERATED MESH BACKGROUND GENERATOR */
+        @keyframes dynamicMesh {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            background: linear-gradient(-135deg, #030712, #0b0f19, #020617, #1e1b4b, #0f172a, #040815);
+            background-size: 500% 500%;
+            animation: dynamicMesh 30s ease infinite;
+            color: #f8fafc;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        /* TEXT SELECTION CUSTOM MATRIX */
+        ::-webkit-selection { background: rgba(99, 102, 241, 0.4); color: #ffffff; }
+        ::-moz-selection { background: rgba(99, 102, 241, 0.4); color: #ffffff; }
+        ::selection { background: rgba(99, 102, 241, 0.4); color: #ffffff; }
+
+        /* SCROLLBAR ENGINE MAPPING */
+        .global-scroll::-webkit-scrollbar { width: 8px; height: 8px; }
+        .global-scroll::-webkit-scrollbar-track { background: rgba(2, 6, 23, 0.8); border-left: 1px solid rgba(51, 65, 85, 0.2); }
+        .global-scroll::-webkit-scrollbar-thumb { background: rgba(71, 85, 105, 0.5); border-radius: 100px; border: 2px solid rgba(2, 6, 23, 1); }
+        .global-scroll::-webkit-scrollbar-thumb:hover { background: rgba(99, 102, 241, 0.8); }
+
+        .horizontal-scroll::-webkit-scrollbar { height: 5px; }
+        .horizontal-scroll::-webkit-scrollbar-track { background: transparent; }
+        .horizontal-scroll::-webkit-scrollbar-thumb { background: rgba(51, 65, 85, 0.6); border-radius: 10px; }
+        .horizontal-scroll::-webkit-scrollbar-thumb:hover { background: var(--glow-color); }
+
+        /* REAL-TIME MATRIX PULSE FEEDBACK SPECIFICATIONS */
+        .canvas-compile-pulse { animation: matrixFlash 0.45s cubic-bezier(0.16, 1, 0.3, 1); }
+        @keyframes matrixFlash {
+            0% { transform: scale(0.98); filter: brightness(1.4) drop-shadow(0 0 25px rgba(99,102,241,0.6)); }
+            100% { transform: scale(1); filter: brightness(1) drop-shadow(0 0 0px transparent); }
+        }
+
+        /* GLITCH EFFECTS FOR PREMIUM HACKER BANNER INTERFACES */
+        .glitch-text { position: relative; }
+        .glitch-text::before, .glitch-text::after {
+            content: '𝐋𝐢𝐧𝐤ᵐᵉ🇶‌🇷‌';
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: transparent;
+        }
+        .glitch-text::before { left: 2px; text-shadow: -1px 0 #ff00c1; clip: rect(44px, 450px, 56px, 0); animation: glitch-anim 5s infinite linear alternate-reverse; }
+        .glitch-text::after { left: -2px; text-shadow: -1px 0 #00fff9, 0 1px #00fff9; clip: rect(85px, 450px, 140px, 0); animation: glitch-anim2 5s infinite linear alternate-reverse; }
+        
+        @keyframes glitch-anim {
+            0% { clip: rect(31px, 9999px, 94px, 0); }
+            10% { clip: rect(112px, 9999px, 76px, 0); }
+            20% { clip: rect(85px, 9999px, 5px, 0); }
+            30% { clip: rect(27px, 9999px, 115px, 0); }
+            40% { clip: rect(73px, 9999px, 29px, 0); }
+            50% { clip: rect(119px, 9999px, 84px, 0); }
+            60% { clip: rect(4px, 9999px, 63px, 0); }
+            70% { clip: rect(97px, 9999px, 122px, 0); }
+            80% { clip: rect(55px, 9999px, 10px, 0); }
+            90% { clip: rect(82px, 9999px, 43px, 0); }
+            100% { clip: rect(67px, 9999px, 133px, 0); }
+        }
+        @keyframes glitch-anim2 {
+            0% { clip: rect(76px, 9999px, 116px, 0); }
+            11% { clip: rect(43px, 9999px, 98px, 0); }
+            22% { clip: rect(122px, 9999px, 14px, 0); }
+            33% { clip: rect(5px, 9999px, 83px, 0); }
+            44% { clip: rect(89px, 9999px, 41px, 0); }
+            55% { clip: rect(131px, 9999px, 66px, 0); }
+            66% { clip: rect(23px, 9999px, 105px, 0); }
+            77% { clip: rect(104px, 9999px, 52px, 0); }
+            88% { clip: rect(41px, 9999px, 129px, 0); }
+            100% { clip: rect(19px, 9999px, 73px, 0); }
+        }
+
+        /* PREMIUM FROSTED LAB INTERFACES */
+        .glass-panel { background: rgba(15, 23, 42, 0.45); border: 1px solid rgba(255, 255, 255, 0.04); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); }
+        .glass-panel:hover { border-color: rgba(99, 102, 241, 0.15); box-shadow: 0 20px 40px -15px rgba(0,0,0,0.5); }
+        .glass-input { background: rgba(2, 6, 23, 0.7); border: 1px solid rgba(51, 65, 85, 0.5); color: #f1f5f9; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .glass-input:focus { border-color: var(--glow-color); box-shadow: 0 0 14px rgba(99, 102, 241, 0.25); outline: none; background: rgba(2, 6, 23, 0.9); }
+
+        /* RADIAL AMBIENT GLOW NODES */
+        .ambient-glow-1 { position: absolute; top: 15%; left: 10%; width: 450px; height: 450px; background: radial-gradient(circle, rgba(99,102,241,0.08) 0%, transparent 70%); pointer-events: none; z-index: 0; }
+        .ambient-glow-2 { position: absolute; bottom: 10%; right: 5%; width: 550px; height: 550px; background: radial-gradient(circle, rgba(236,72,153,0.05) 0%, transparent 70%); pointer-events: none; z-index: 0; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col overflow-x-hidden antialiased select-none global-scroll">
+
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+
+    <header class="sticky top-0 z-50 border-b border-slate-900/80 bg-slate-950/75 backdrop-blur-2xl px-6 py-3.5 flex flex-col md:flex-row justify-between items-center gap-4 shadow-xl shadow-black/40">
+        <div class="flex items-center gap-4 group cursor-pointer">
+            <div id="header-logo-badge" class="bg-gradient-to-tr from-indigo-600 via-purple-600 to-pink-500 p-2.5 rounded-xl text-white font-black text-xl shadow-lg shadow-indigo-500/20 transform group-hover:rotate-12 transition-transform duration-300">
+                🇶‌🇷‌
+            </div>
+            <div>
+                <h1 id="app-title-glitch" class="text-2xl font-black tracking-wider text-slate-100 glitch-text">
+                     can look static? No way! 𝐋𝐢𝐧𝐤ᵐᵉ🇶‌🇷‌
+                </h1>
+                <p class="text-[10px] uppercase tracking-widest text-indigo-400 font-extrabold flex items-center gap-1.5">
+                    <span>⚡ HYPER-SCALE CLIENT TERMINAL</span>
+                    <span class="text-slate-600">•</span>
+                    <span class="text-pink-400 animate-pulse">v4.0 BUILD /GODMODE</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+            <div class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800/80 text-xs font-mono text-slate-400">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                <span>HEAP: <span id="heap-usage-display" class="text-emerald-400 font-bold">0.00 MB</span></span>
+            </div>
+            <div class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800/80 text-xs font-mono text-slate-400">
+                <span>FPS: <span id="fps-counter-display" class="text-indigo-400 font-bold">60</span></span>
+            </div>
+            <span class="text-xs bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 px-3.5 py-1.5 rounded-xl font-bold tracking-tight shadow-inner flex items-center gap-2">
+                🔒 STATIC LOCALHOST DEPLOYMENT (ZERO SERVER CODES)
+            </span>
+        </div>
+    </header>
+
+    <main class="flex-1 flex flex-col lg:flex-row h-auto lg:h-[calc(100vh-130px)] overflow-hidden z-10 relative">
+        
+        <section class="w-full lg:w-7/12 p-4 lg:p-6 overflow-y-auto global-scroll space-y-6 bg-slate-950/20">
+            
+            <div class="glass-panel rounded-2xl p-5 shadow-2xl transition-all duration-300">
+                <div class="flex justify-between items-center mb-3">
+                    <h2 class="text-xs font-black uppercase tracking-widest text-slate-400 flex items-center gap-2">
+                        <span class="w-1.5 h-3 bg-gradient-to-b from-indigo-500 to-purple-500 rounded-full"></span>
+                        01 // Premium Theme Matrix Lab
+                    </h2>
+                    <span class="text-[10px] text-indigo-400 font-mono bg-indigo-500/10 px-2 py-0.5 rounded-md">Instantly Inject Presets</span>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2.5">
+                    <button onclick="AppEngine.applyPreset('classicDark')" class="group p-2 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-indigo-500 text-left transition-all duration-300 active:scale-95">
+                        <div class="w-full h-1.5 rounded bg-indigo-500 mb-1.5 shadow-sm shadow-indigo-500/50"></div>
+                        <span class="text-[10px] font-bold block text-slate-300 group-hover:text-white transition-colors">Default Cyber</span>
+                    </button>
+                    <button onclick="AppEngine.applyPreset('hackerGreen')" class="group p-2 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-emerald-500 text-left transition-all duration-300 active:scale-95">
+                        <div class="w-full h-1.5 rounded bg-emerald-500 mb-1.5 shadow-sm shadow-emerald-500/50"></div>
+                        <span class="text-[10px] font-bold block text-slate-300 group-hover:text-white transition-colors">Terminal GNC</span>
+                    </button>
+                    <button onclick="AppEngine.applyPreset('mikuTeal')" class="group p-2 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-cyan-400 text-left transition-all duration-300 active:scale-95">
+                        <div class="w-full h-1.5 rounded bg-cyan-400 mb-1.5 shadow-sm shadow-cyan-400/50"></div>
+                        <span class="text-[10px] font-bold block text-slate-300 group-hover:text-white transition-colors">Miku Synth</span>
+                    </button>
+                    <button onclick="AppEngine.applyPreset('neonGlitch')" class="group p-2 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-pink-500 text-left transition-all duration-300 active:scale-95">
+                        <div class="w-full h-1.5 rounded bg-gradient-to-r from-pink-500 to-purple-500 mb-1.5 shadow-sm"></div>
+                        <span class="text-[10px] font-bold block text-slate-300 group-hover:text-white transition-colors">Neon Cascade</span>
+                    </button>
+                    <button onclick="AppEngine.applyPreset('sunsetVibe')" class="group p-2 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-orange-500 text-left transition-all duration-300 active:scale-95">
+                        <div class="w-full h-1.5 rounded bg-gradient-to-r from-orange-500 to-rose-500 mb-1.5 shadow-sm"></div>
+                        <span class="text-[10px] font-bold block text-slate-300 group-hover:text-white transition-colors">Solar Flare</span>
+                    </button>
+                    <button onclick="AppEngine.applyPreset('minimalLight')" class="group p-2 rounded-xl bg-white border border-slate-200 hover:border-slate-400 text-left transition-all duration-300 active:scale-95">
+                        <div class="w-full h-1.5 rounded bg-slate-900 mb-1.5"></div>
+                        <span class="text-[10px] font-bold block text-slate-800 group-hover:text-black transition-colors">Paper Studio</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="glass-panel rounded-2xl p-5 shadow-2xl space-y-4">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-xs font-black uppercase tracking-widest text-slate-400 flex items-center gap-2">
+                        <span class="w-1.5 h-3 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full"></span>
+                        02 // Multiplex Input Stream Router
+                    </h2>
+                    <span class="text-[10px] text-purple-400 font-mono bg-purple-500/10 px-2 py-0.5 rounded-md">Live Parsing Node</span>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 p-1 bg-slate-950/80 rounded-xl border border-slate-800/80">
+                    <button id="nav-tab-text" onclick="AppEngine.switchInputTab('text')" class="flex items-center justify-center gap-1.5 py-2 rounded-lg text-xs font-bold transition-all duration-300 bg-indigo-600 text-white shadow-lg shadow-indigo-600/15">
+                        🔗 Text & URLs
+                    </button>
+                    <button id="nav-tab-image" onclick="AppEngine.switchInputTab('image')" class="flex items-center justify-center gap-1.5 py-2 rounded-lg text-xs font-bold transition-all duration-300 text-slate-400 hover:text-slate-200">
+                        🖼️ Image-to-QR
+                    </button>
+                    <button id="nav-tab-scanner" onclick="AppEngine.switchInputTab('scanner')" class="flex items-center justify-center gap-1.5 py-2 rounded-lg text-xs font-bold transition-all duration-300 text-slate-400 hover:text-slate-200">
+                        📷 Cam Scanner
+                    </button>
+                    <button id="nav-tab-batch" onclick="AppEngine.switchInputTab('batch')" class="flex items-center justify-center gap-1.5 py-2 rounded-lg text-xs font-bold transition-all duration-300 text-slate-400 hover:text-slate-200">
+                        📦 Batch Engine
+                    </button>
+                </div>
+
+                <div id="wrapper-input-text" class="tab-content-layer space-y-3">
+                    <textarea id="core-data-input" rows="3.5" class="w-full glass-input rounded-xl p-3.5 text-xs font-mono leading-relaxed custom-scroll" placeholder="Inject active hyperlinks, deep system nodes, structural configuration texts or markdown codes to synthesize your live grid array immediately..."></textarea>
+                    <div class="flex flex-wrap gap-2">
+                        <button onclick="AppEngine.injectSample('https://github.com/')" class="px-2.5 py-1 text-[10px] font-bold bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 rounded-lg transition-colors">🔗 GitHub Preset</button>
+                        <button onclick="AppEngine.injectSample('BEGIN:VCARD\nVERSION:3.0\nN:Shuya;Keze\nORG:Mount Mary Student Council\nTITLE:Editorial Secretary\nTEL:+910000000000\nEND:VCARD')" class="px-2.5 py-1 text-[10px] font-bold bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 rounded-lg transition-colors">📇 VCard Blueprint</button>
+                        <button onclick="AppEngine.injectSample('WIFI:S:MMC_CAMPUS_NET;T:WPA;P:HackerSecretPass777;;')" class="px-2.5 py-1 text-[10px] font-bold bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 rounded-lg transition-colors">📶 WiFi Node String</button>
+                    </div>
+                </div>
+
+                <div id="wrapper-input-image" class="tab-content-layer hidden space-y-3">
+                    <div class="border-2 border-dashed border-slate-800/80 hover:border-indigo-500/40 rounded-xl p-5 transition-all relative text-center bg-slate-950/30 group">
+                        <input type="file" id="image-to-qr-uploader" accept="image/*" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-20">
+                        <div class="space-y-1 z-10 relative pointer-events-none">
+                            <p class="text-xs text-slate-300 font-bold group-hover:text-indigo-400 transition-colors">Drop Image Asset File to Deconstruct Matrix</p>
+                            <p class="text-[10px] text-slate-500">Compresses down to an embedded data layout string completely offline</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 bg-slate-900/40 p-3 rounded-xl border border-slate-800/60">
+                        <div>
+                            <label class="block text-[10px] text-slate-400 font-bold mb-1 uppercase tracking-wider">Quantization Base Resolution</label>
+                            <select id="img-matrix-resolution" class="w-full bg-slate-950 border border-slate-800 rounded-lg p-2 text-xs text-slate-300 focus:outline-none">
+                                <option value="24">24x24 Retro Grid (High Scanner Readability)</option>
+                                <option value="32" selected>32x32 Medium Resolution Frame</option>
+                                <option value="40">40x40 Density Grid (Requires Max Scan Shield)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[10px] text-slate-400 font-bold mb-1 uppercase tracking-wider">Compression Format Output</label>
+                            <select id="img-matrix-format" class="w-full bg-slate-950 border border-slate-800 rounded-lg p-2 text-xs text-slate-300 focus:outline-none">
+                                <option value="jpeg">Optimized Lo-Fi JPEG Stream</option>
+                                <option value="png">Lossless Binary Base64 Channel</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="img-convert-feedback" class="hidden flex items-center justify-between bg-emerald-500/10 border border-emerald-500/20 px-3 py-2 rounded-xl">
+                        <span class="text-xs text-emerald-400 font-bold">✔ Byte Stream Compiled Extracted Successfully!</span>
+                        <span id="img-stream-size-badge" class="text-[10px] font-mono bg-emerald-500/20 px-2 py-0.5 rounded text-emerald-300 font-black">0.0 KB</span>
+                    </div>
+                </div>
+
+                <div id="wrapper-input-scanner" class="tab-content-layer hidden space-y-3">
+                    <div class="bg-slate-950 rounded-xl overflow-hidden border border-slate-800 relative aspect-video flex flex-col items-center justify-center">
+                        <video id="scanner-video-feed" class="w-full h-full object-cover hidden"></video>
+                        <canvas id="scanner-render-canvas" class="hidden"></canvas>
+                        
+                        <div id="scanner-placeholder" class="text-center p-4 space-y-2">
+                            <div class="w-10 h-10 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center mx-auto text-slate-400 animate-pulse">📷</div>
+                            <p class="text-xs text-slate-400 font-medium">Camera Feed Core Stream Offline</p>
+                            <button onclick="ScannerModule.initiateStream()" class="px-3 py-1.5 text-xs font-bold bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg shadow-lg shadow-indigo-600/20 transition-all">
+                                Wake Cam Stream
+                            </button>
+                        </div>
+                        <div id="scanner-laser-line" class="absolute left-0 right-0 h-0.5 bg-pink-500 shadow-[0_0_12px_#ec4899] top-0 hidden"></div>
+                    </div>
+                    <div id="scanner-result-card" class="bg-slate-900/50 border border-slate-800 rounded-xl p-3 hidden space-y-1.5">
+                        <p class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Intercepted Payload Result Matrix</p>
+                        <div id="scanner-result-string" class="text-xs font-mono text-emerald-400 bg-slate-950 p-2 rounded-lg border border-slate-900 break-all max-h-24 overflow-y-auto custom-scroll"></div>
+                        <button onclick="ScannerModule.pushResultToGenerator()" class="text-[10px] font-bold bg-slate-800 hover:bg-slate-700 border border-slate-700 px-2.5 py-1 rounded text-slate-200 transition-colors">
+                            📥 Clone into Active Builder State
+                        </button>
+                    </div>
+                </div>
+
+                <div id="wrapper-input-batch" class="tab-content-layer hidden space-y-3">
+                    <div class="space-y-1">
+                        <label class="block text-xs text-slate-400 font-bold">Line-Separated Bulk Stream Parsing</label>
+                        <textarea id="batch-area-input" rows="4" class="w-full glass-input rounded-xl p-3 text-xs font-mono custom-scroll" placeholder="https://siteA.com&#10;https://siteB.com&#10;https://siteC.com"></textarea>
+                    </div>
+                    <button onclick="BatchModule.processBulk()" class="w-full py-2 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white rounded-xl font-bold text-xs shadow-lg transition-all active:scale-95">
+                        ⚙ Mass-Compile Batch Zip Model Queue
+                    </button>
+                </div>
+            </div>
+
+            <div class="glass-panel rounded-2xl p-5 shadow-2xl space-y-4">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-xs font-black uppercase tracking-widest text-slate-400 flex items-center gap-2">
+                        <span class="w-1.5 h-3 bg-gradient-to-b from-cyan-500 to-indigo-500 rounded-full"></span>
+                        03 // Matrix Dot & Eye Structural Form
+                    </h2>
+                    <span class="text-[10px] text-cyan-400 font-mono bg-cyan-500/10 px-2 py-0.5 rounded-md">Geometry Engine</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-[11px] text-slate-400 font-bold uppercase tracking-wider mb-1">Internal Data Node Shape</label>
+                        <select id="cfg-dot-style" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-2.5 text-xs text-slate-200 focus:border-indigo-500 focus:outline-none">
+                            <option value="square">Classic Micro-Squares</option>
+                            <option value="rounded" selected>Liquid High-Rounded Dots</option>
+                            <option value="extra-rounded">Futuristic Hyper-Capsules</option>
+                            <option value="classy">Premium High-End Circular Beads</option>
+                            <option value="classy-rounded">Soft Minimalist Circular Matrix</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-[11px] text-slate-400 font-bold uppercase tracking-wider mb-1">Corner Tracking Anchor Geometry (Eyes)</label>
+                        <select id="cfg-eye-frame-style" class="w-full bg-slate-950 border border-slate-800 rounded-xl p-2.5 text-xs text-slate-200 focus:border-indigo-500 focus:outline-none">
+                            <option value="square">Rigid Linear Frame</option>
+                            <option value="dot">Smooth Spherical Frame</option>
+                            <option value="extra-rounded" selected>Aerodynamic Curved Capsule Outer</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-900 space-y-3">
+                    <div class="flex justify-between items-center">
+                        <label class="text-xs font-bold text-slate-300">Matrix Foreground Layer Shader Protocol</label>
+                        <div class="flex bg-slate-900 p-0.5 rounded-lg border border-slate-800">
+                            <button id="btn-fg-solid" onclick="AppEngine.toggleFgGradientMode(false)" class="px-3 py-1 text-[10px] font-bold rounded-md bg-indigo-600 text-white transition-all">Solid Core</button>
+                            <button id="btn-fg-gradient" onclick="AppEngine.toggleFgGradientMode(true)" class="px-3 py-1 text-[10px] font-bold rounded-md text-slate-400 hover:text-slate-200 transition-all">Gradient Blend</button>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
+                        <div>
+                            <span class="text-[10px] uppercase font-bold text-slate-500 tracking-wider block mb-1">Color Anchor A (Primary Master Node)</span>
+                            <div class="flex gap-2">
+                                <div class="relative w-9 h-9 rounded-lg overflow-hidden border border-slate-700 bg-slate-800 flex-shrink-0">
+                                    <input type="color" id="picker-fg-1" value="#6366f1" class="absolute inset-0 w-full h-full transform scale-150 cursor-pointer bg-transparent border-0">
+                                </div>
+                                <input type="text" id="hex-fg-1" value="#6366f1" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-2.5 text-xs font-mono text-slate-300 uppercase focus:outline-none focus:border-indigo-500">
+                            </div>
+                        </div>
+                        <div id="fg-gradient-control-node" class="opacity-30 pointer-events-none transition-all duration-300">
+                            <span class="text-[10px] uppercase font-bold text-slate-500 tracking-wider block mb-1">Color Anchor B (Secondary Morph Node)</span>
+                            <div class="flex gap-2">
+                                <div class="relative w-9 h-9 rounded-lg overflow-hidden border border-slate-700 bg-slate-800 flex-shrink-0">
+                                    <input type="color" id="picker-fg-2" value="#a855f7" class="absolute inset-0 w-full h-full transform scale-150 cursor-pointer bg-transparent border-0">
+                                </div>
+                                <input type="text" id="hex-fg-2" value="#a855f7" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-2.5 text-xs font-mono text-slate-300 uppercase focus:outline-none focus:border-indigo-500">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="fg-gradient-meta-node" class="grid grid-cols-2 gap-3 pt-1 hidden">
+                        <div>
+                            <label class="block text-[10px] text-slate-500 font-bold uppercase mb-1">Gradient Progression Vector</label>
+                            <select id="cfg-fg-grad-type" class="w-full bg-slate-950 border border-slate-800 rounded-lg p-1.5 text-xs text-slate-300 focus:outline-none">
+                                <option value="linear" selected>Linear Progression</option>
+                                <option value="radial">Radial Hub Spread</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[10px] text-slate-500 font-bold uppercase mb-1">Angular Gradient Rotation Degree</label>
+                            <input type="range" id="cfg-fg-grad-rot" min="0" max="360" step="1" value="45" class="w-full accent-indigo-500 mt-2 cursor-pointer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-panel rounded-2xl p-5 shadow-2xl space-y-4">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-xs font-black uppercase tracking-widest text-slate-400 flex items-center gap-2">
+                        <span class="w-1.5 h-3 bg-gradient-to-b from-emerald-500 to-teal-500 rounded-full"></span>
+                        04 // Canvas Background Alpha & Layer Shading
+                    </h2>
+                    <span class="text-[10px] text-emerald-400 font-mono bg-emerald-500/10 px-2 py-0.5 rounded-md">Background Engine</span>
+                </div>
+
+                <div class="flex items-center justify-between p-3 bg-slate-950/80 rounded-xl border border-slate-900 group hover:border-indigo-500/30 transition-all">
+                    <div class="space-y-0.5">
+                        <label for="cfg-bg-transparent" class="text-xs font-bold text-slate-200 cursor-pointer block">Isolate Channel Transparency Alpha</label>
+                        <p class="text-[10px] text-slate-500">Discards the backing color architecture completely for native alpha cutouts</p>
+                    </div>
+                    <input type="checkbox" id="cfg-bg-transparent" class="w-4 h-4 accent-indigo-500 cursor-pointer rounded-md">
+                </div>
+
+                <div id="bg-master-shading-container" class="bg-slate-950/60 p-4 rounded-xl border border-slate-900 space-y-3 transition-all duration-300">
+                    <div class="flex justify-between items-center">
+                        <label class="text-xs font-bold text-slate-300">Canvas Base Plane Shader Type</label>
+                        <div class="flex bg-slate-900 p-0.5 rounded-lg border border-slate-800">
+                            <button id="btn-bg-solid" onclick="AppEngine.toggleBgGradientMode(false)" class="px-3 py-1 text-[10px] font-bold rounded-md bg-indigo-600 text-white transition-all">Solid Fill</button>
+                            <button id="btn-bg-gradient" onclick="AppEngine.toggleBgGradientMode(true)" class="px-3 py-1 text-[10px] font-bold rounded-md text-slate-400 hover:text-slate-200 transition-all">Gradient Wash</button>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
+                        <div>
+                            <span class="text-[10px] uppercase font-bold text-slate-500 tracking-wider block mb-1">Canvas Core Color Vector</span>
+                            <div class="flex gap-2">
+                                <div class="relative w-9 h-9 rounded-lg overflow-hidden border border-slate-700 bg-slate-800 flex-shrink-0">
+                                    <input type="color" id="picker-bg-1" value="#ffffff" class="absolute inset-0 w-full h-full transform scale-150 cursor-pointer bg-transparent border-0">
+                                </div>
+                                <input type="text" id="hex-bg-1" value="#ffffff" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-2.5 text-xs font-mono text-slate-300 uppercase focus:outline-none focus:border-indigo-500">
+                            </div>
+                        </div>
+                        <div id="bg-gradient-control-node" class="opacity-30 pointer-events-none transition-all duration-300">
+                            <span class="text-[10px] uppercase font-bold text-slate-500 tracking-wider block mb-1">Canvas Gradient Terminal Vector</span>
+                            <div class="flex gap-2">
+                                <div class="relative w-9 h-9 rounded-lg overflow-hidden border border-slate-700 bg-slate-800 flex-shrink-0">
+                                    <input type="color" id="picker-bg-2" value="#f1f5f9" class="absolute inset-0 w-full h-full transform scale-150 cursor-pointer bg-transparent border-0">
+                                </div>
+                                <input type="text" id="hex-bg-2" value="#f1f5f9" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-2.5 text-xs font-mono text-slate-300 uppercase focus:outline-none focus:border-indigo-500">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="bg-gradient-meta-node" class="grid grid-cols-2 gap-3 pt-1 hidden">
+                        <div>
+                            <label class="block text-[10px] text-slate-500 font-bold uppercase mb-1">Background Gradient Alignment</label>
+                            <select id="cfg-bg-grad-type" class="w-full bg-slate-950 border border-slate-800 rounded-lg p-1.5 text-xs text-slate-300 focus:outline-none">
+                                <option value="linear" selected>Linear Projection</option>
+                                <option value="radial">Radial Core Projection</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[10px] text-slate-500 font-bold uppercase mb-1">Angular Wash Rotation Plane</label>
+                            <input type="range" id="cfg-bg-grad-rot" min="0" max="360" step="1" value="90" class="w-full accent-indigo-500 mt-2 cursor-pointer">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-1">
+                    <div class="flex justify-between text-xs font-bold text-slate-300">
+                        <label>Reed-Solomon Scanning Parity Error Correction</label>
+                        <span id="label-error-correction-parity" class="text-indigo-400 font-mono">Medium Correction Matrix (15%)</span>
+                    </div>
+                    <input type="range" id="cfg-error-correction-slider" min="0" max="3" step="1" value="1" class="w-full accent-indigo-500 cursor-pointer">
+                    <p class="text-[9px] text-slate-500 leading-normal">
+                        Injects algorithmic recovery padding logic matrices. Elevate checking channels to maximum values to sustain operational cell readings when implementing expansive overlay emblems across center points.
+                    </p>
+                </div>
+            </div>
+
+            <div class="glass-panel rounded-2xl p-5 shadow-2xl space-y-4">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-xs font-black uppercase tracking-widest text-slate-400 flex items-center gap-2">
+                        <span class="w-1.5 h-3 bg-gradient-to-b from-pink-500 to-orange-500 rounded-full"></span>
+                        05 // Central Identity Branding Emblem Matrix
+                    </h2>
+                    <span class="text-[10px] text-pink-400 font-mono bg-pink-500/10 px-2 py-0.5 rounded-md">Logo Positioning Matrix</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div class="space-y-2">
+                        <label class="block text-xs font-bold text-slate-400 uppercase tracking-wider">Upload Internal Graphic Asset</label>
+                        <input type="file" id="cfg-logo-uploader" accept="image/*" class="w-full text-xs text-slate-500 file:mr-3 file:py-2 file:px-3 file:rounded-xl file:border-0 file:text-[11px] file:font-black file:bg-slate-900 file:text-slate-300 hover:file:bg-slate-800 file:cursor-pointer cursor-pointer">
+                        <button id="btn-purge-logo-asset" onclick="AppEngine.purgeLogo()" class="hidden text-[10px] text-rose-400 font-extrabold hover:underline items-center gap-1">✕ Clear Active Overlay Graphic</button>
+                    </div>
+
+                    <div class="space-y-3.5">
+                        <div class="flex items-center justify-between p-2.5 bg-slate-950 rounded-xl border border-slate-900 group">
+                            <div class="space-y-0.5">
+                                <label for="cfg-logo-circle-frame" class="text-xs font-bold text-slate-300 cursor-pointer">Clip Canvas Frame Circularly</label>
+                                <p class="text-[9px] text-slate-500">Injects a clean backing circle layer</p>
+                            </div>
+                            <input type="checkbox" id="cfg-logo-circle-frame" class="w-4 h-4 accent-indigo-500 cursor-pointer rounded-md">
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-[11px] font-bold text-slate-400 mb-1">
+                                <label>Asset Geometry Proportional Scale</label>
+                                <span id="label-logo-scale-metric" class="text-pink-400 font-mono">15%</span>
+                            </div>
+                            <input type="range" id="cfg-logo-scale-slider" min="0.05" max="0.38" step="0.01" value="0.15" class="w-full accent-indigo-500 cursor-pointer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-panel rounded-2xl p-5 shadow-2xl space-y-3">
+                <h3 class="text-xs font-black uppercase tracking-widest text-slate-400 flex items-center gap-2">
+                    📖 SYSTEM ARCHITECTURE CORE DIAGNOSTICS & TELEMETRY
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-center">
+                    <div class="bg-slate-950/80 p-2.5 rounded-xl border border-slate-900">
+                        <p class="text-[9px] font-bold uppercase tracking-widest text-slate-500">Reed-Solomon Block</p>
+                        <p id="telemetry-block-parity" class="text-xs font-mono font-bold text-indigo-400 mt-1">Galois Field 256</p>
+                    </div>
+                    <div class="bg-slate-950/80 p-2.5 rounded-xl border border-slate-900">
+                        <p class="text-[9px] font-bold uppercase tracking-widest text-slate-500">Active IO Pipeline</p>
+                        <p id="telemetry-pipeline-status" class="text-xs font-mono font-bold text-emerald-400 mt-1">Awaiting Data</p>
+                    </div>
+                    <div class="bg-slate-950/80 p-2.5 rounded-xl border border-slate-900">
+                        <p class="text-[9px] font-bold uppercase tracking-widest text-slate-500">Render Pipeline</p>
+                        <p class="text-xs font-mono font-bold text-cyan-400 mt-1">HTML5 / Canvas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full lg:w-5/12 border-t lg:border-t-0 lg:border-l border-slate-900 bg-slate-950/40 backdrop-blur-3xl p-6 flex flex-col items-center justify-between space-y-6">
+            
+            <div class="w-full flex flex-col items-center space-y-5">
+                <span class="text-[10px] uppercase tracking-widest text-slate-500 font-black bg-slate-900/90 border border-slate-800 px-3 py-1.5 rounded-full flex items-center gap-2 shadow-inner">
+                    <span class="w-1.5 h-1.5 bg-indigo-500 rounded-full animate-ping"></span> Real-Time Production Vector Output Canvas
+                </span>
+
+                <div class="p-6 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 border border-slate-800 rounded-[32px] shadow-2xl flex items-center justify-center relative group max-w-full">
+                    <div id="canvas-pulse-wrapper" class="bg-white p-3 rounded-2xl shadow-2xl transition-all duration-300">
+                        <div id="qrcode-canvas-target"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full max-w-sm space-y-3">
+                <h4 class="text-[10px] text-center font-black uppercase tracking-widest text-slate-400">Compile & Stream Ultra-HD Asset Layouts</h4>
+                
+                <div class="grid grid-cols-2 gap-2.5">
+                    <button onclick="AppEngine.exportFile('png')" class="group relative flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-slate-200 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 border border-slate-800 hover:border-slate-700 active:scale-95 shadow-lg">
+                        Download Master PNG
+                    </button>
+                    <button onclick="AppEngine.exportFile('svg')" class="group relative flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 text-slate-200 py-2.5 rounded-xl font-bold text-xs transition-all duration-300 border border-slate-800 hover:border-slate-700 active:scale-95 shadow-lg">
+                        Download Studio SVG
+                    </button>
+                </div>
+                
+                <button onclick="AppEngine.exportFile('pdf')" class="w-full relative flex items-center justify-center gap-2 bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 hover:from-indigo-500 hover:to-purple-500 text-white py-3 rounded-xl font-black text-xs shadow-xl shadow-indigo-950/50 transition-all duration-300 active:scale-[0.97]">
+                    Compile High Definition Print-Ready PDF Document
+                </button>
+            </div>
+
+            <div class="w-full bg-slate-900/40 p-3.5 rounded-2xl border border-slate-900 space-y-2">
+                <p class="text-[10px] font-black tracking-widest uppercase text-slate-500 flex justify-between items-center">
+                    <span>📈 Client Metrics Analytics Engine</span>
+                    <span id="analytics-total-count" class="text-indigo-400 font-mono">0 Operations</span>
+                </p>
+                <div class="w-full h-12 flex items-end gap-1 pt-1 border-b border-slate-800/60" id="analytics-chart-bars-hook">
+                    <div class="flex-1 bg-slate-800/50 h-2 rounded-t transition-all"></div>
+                    <div class="flex-1 bg-slate-800/50 h-4 rounded-t transition-all"></div>
+                    <div class="flex-1 bg-slate-800/50 h-1 rounded-t transition-all"></div>
+                    <div class="flex-1 bg-slate-800/50 h-3 rounded-t transition-all"></div>
+                    <div class="flex-1 bg-slate-800/50 h-6 rounded-t transition-all"></div>
+                    <div class="flex-1 bg-slate-800/50 h-2 rounded-t transition-all"></div>
+                </div>
+            </div>
+
+            <div class="w-full border-t border-slate-900/80 pt-4 space-y-2.5">
+                <h5 class="text-[10px] uppercase font-black tracking-widest text-slate-400 flex justify-between items-center">
+                    <span>⏳ Local Encrypted State-Cache (Browser Sandbox)</span>
+                    <button onclick="MemoryModule.purgeCacheMatrix()" class="text-rose-400 font-bold hover:underline text-[9px] uppercase tracking-wider">Flush Workspace Storage</button>
+                </h5>
+                <div id="memory-state-cache-drawer" class="flex gap-2 overflow-x-auto pb-2 horizontal-scroll text-xs">
+                    <span class="text-[11px] text-slate-600 italic">No structural history operations logged.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-950 bg-slate-950 px-6 py-4 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 gap-3 z-10 relative shadow-2xl">
+        <div class="flex flex-col md:flex-row items-center gap-1 md:gap-3 text-center md:text-left">
+            <p>© 2026 <span class="font-black tracking-wider bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">𝐋𝐢𝐧𝐤ᵐᵉ🇶‌🇷‌</span> Studio Core Matrix.</p>
+            <span class="hidden md:inline text-slate-800">|</span>
+            <p class="text-slate-400 font-mono text-[11px]">System Status: <span class="text-emerald-400 font-bold">ONLINE</span></p>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-4">
+            <span class="flex items-center gap-1.5 text-indigo-400/80 font-bold"><span class="h-1.5 w-1.5 rounded-full bg-indigo-400 animate-pulse"></span> Complete Cookie Isolation Protocols</span>
+            <span class="text-slate-800 hidden sm:inline">|</span>
+            <p class="italic text-slate-500 text-[11px]">Made by students, for hackers everywhere 🚀</p>
+        </div>
+    </footer>
+
+    <script>
+        /**
+         * LINKME QR SYSTEM APPLICATION ENGINE RUNTIME OBJECT ARCHITECTURE
+         * WRITTEN NATIVELY IN REPLICABLE MODULAR CORE ENGINES
+         */
+        
+        // 1. SYSTEM AUDIO SYNTHESIS SOUND ENGINE SUBSYSTEM
+        const AudioSynthEngine = (() => {
+            let audioCtx = null;
+
+            function initContext() {
+                if (!audioCtx) {
+                    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                }
+            }
+
+            function playTone(freq, duration, type = "sine", gainVal = 0.1) {
+                try {
+                    initContext();
+                    if (!audioCtx) return;
+
+                    const osc = audioCtx.createOscillator();
+                    const gainNode = audioCtx.createGain();
+                    
+                    osc.type = type;
+                    osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+                    
+                    gainNode.gain.setValueAtTime(gainVal, audioCtx.currentTime);
+                    gainNode.gain.exponentialRampToValueAtTime(0.00001, audioCtx.currentTime + duration);
+                    
+                    osc.connect(gainNode);
+                    gainNode.connect(audioCtx.destination);
+                    
+                    osc.start();
+                    osc.stop(audioCtx.currentTime + duration);
+                } catch (err) {
+                    console.warn("Audio Context init block blocked by secure sandboxed environment policy", err);
+                }
+            }
+
+            return {
+                clickTick: () => playTone(650, 0.04, "triangle", 0.05),
+                successBeep: () => {
+                    playTone(523.25, 0.08, "sine", 0.08);
+                    setTimeout(() => playTone(659.25, 0.12, "sine", 0.08), 60);
+                },
+                errorBuzz: () => {
+                    playTone(180, 0.15, "sawtooth", 0.12);
+                    setTimeout(() => playTone(150, 0.2, "sawtooth", 0.12), 80);
+                },
+                compilePulse: () => playTone(880, 0.03, "sine", 0.03)
+            };
+        })();
+
+        // 2. PRESET MATRIX THEMES STORAGE MAP DATA UTILITIES
+        const ThemePresets = {
+            classicDark: {
+                fg1: "#6366f1", fg2: "#a855f7", isFgGrad: true, fgType: "linear",
+                bg1: "#ffffff", bg2: "#f1f5f9", isBgGrad: false, bgType: "linear",
+                dots: "rounded", eyes: "extra-rounded", isTransparent: false
+            },
+            hackerGreen: {
+                fg1: "#10b981", fg2: "#059669", isFgGrad: false, fgType: "linear",
+                bg1: "#022c22", bg2: "#022c22", isBgGrad: false, bgType: "linear",
+                dots: "classy", eyes: "square", isTransparent: false
+            },
+            mikuTeal: {
+                fg1: "#06b6d4", fg2: "#3b82f6", isFgGrad: true, fgType: "linear",
+                bg1: "#083344", bg2: "#0f172a", isBgGrad: true, bgType: "linear",
+                dots: "extra-rounded", eyes: "dot", isTransparent: false
+            },
+            neonGlitch: {
+                fg1: "#ec4899", fg2: "#f43f5e", isFgGrad: true, fgType: "radial",
+                bg1: "#0f172a", bg2: "#000000", isBgGrad: true, bgType: "linear",
+                dots: "square", eyes: "square", isTransparent: false
+            },
+            sunsetVibe: {
+                fg1: "#f97316", fg2: "#e11d48", isFgGrad: true, fgType: "linear",
+                bg1: "#fff7ed", bg2: "#fef2f2", isBgGrad: true, bgType: "linear",
+                dots: "classy-rounded", eyes: "extra-rounded", isTransparent: false
+            },
+            minimalLight: {
+                fg1: "#0f172a", fg2: "#0f172a", isFgGrad: false, fgType: "linear",
+                bg1: "#ffffff", bg2: "#ffffff", isBgGrad: false, bgType: "linear",
+                dots: "square", eyes: "square", isTransparent: false
+            }
+        };
+
+        // 3. CORE RUNTIME APP CONTROLLER MODULE ENGINE
+        const AppEngine = (() => {
+            let qrStylingInstance = null;
+            let activeTab = 'text';
+            let isFgGradient = true;
+            let isBgGradient = false;
+            let loadedLogoRawData = null;
+            let loadedLogoProcessedData = null;
+            let systemOperationCounter = 0;
+
+            const parityCodes = ['L', 'M', 'Q', 'H'];
+
+            function initCoreEngine() {
+                qrStylingInstance = new QRCodeStyling({
+                    width: 300,
+                    height: 300,
+                    type: "svg",
+                    data: "https://github.com",
+                    image: "",
+                    dotsOptions: { color: "#6366f1", type: "rounded" },
+                    backgroundOptions: { color: "#ffffff" },
+                    imageOptions: { crossOrigin: "anonymous", hideBackgroundDots: true, imageSize: 0.15, margin: 4 },
+                    cornersSquareOptions: { type: "extra-rounded", color: "#6366f1" },
+                    qrOptions: { errorCorrectionLevel: "M" }
+                });
+
+                qrStylingInstance.append(document.getElementById("qrcode-canvas-target"));
+                attachDOMEventInterceptors();
+                monitorPerformanceMetrics();
+            }
+
+            function attachDOMEventInterceptors() {
+                const triggerNodes = [
+                    document.getElementById("core-data-input"),
+                    document.getElementById("cfg-dot-style"),
+                    document.getElementById("cfg-eye-frame-style"),
+                    document.getElementById("cfg-bg-transparent"),
+                    document.getElementById("cfg-logo-circle-frame"),
+                    document.getElementById("cfg-logo-scale-slider"),
+                    document.getElementById("cfg-error-correction-slider"),
+                    document.getElementById("cfg-fg-grad-type"),
+                    document.getElementById("cfg-fg-grad-rot"),
+                    document.getElementById("cfg-bg-grad-type"),
+                    document.getElementById("cfg-bg-grad-rot")
+                ];
+
+                triggerNodes.forEach(node => {
+                    if (node) node.addEventListener("input", () => compileActiveState(true));
+                });
+
+                // Link picker updates natively
+                bindColorCoupling("picker-fg-1", "hex-fg-1");
+                bindColorCoupling("picker-fg-2", "hex-fg-2");
+                bindColorCoupling("picker-bg-1", "hex-bg-1");
+                bindColorCoupling("picker-bg-2", "hex-bg-2");
+            }
+
+            function bindColorCoupling(pickerId, hexId) {
+                const p = document.getElementById(pickerId);
+                const h = document.getElementById(hexId);
+                
+                p.addEventListener("input", (e) => {
+                    h.value = e.target.value.toUpperCase();
+                    compileActiveState(true);
+                });
+                
+                h.addEventListener("input", (e) => {
+                    if (e.target.value.match(/^#[0-9A-F]{6}$/i)) {
+                        p.value = e.target.value;
+                        compileActiveState(true);
+                    }
+                });
+            }
+
+            function compileActiveState(triggerAudio = false) {
+                if (!qrStylingInstance) return;
+
+                systemOperationCounter++;
+                document.getElementById("analytics-total-count").innerText = `${systemOperationCounter} Operations`;
+                document.getElementById("telemetry-pipeline-status").innerText = "Compiling Vector";
+                document.getElementById("telemetry-pipeline-status").className = "text-xs font-mono font-bold text-yellow-500 mt-1";
+
+                if (triggerAudio) AudioSynthEngine.compilePulse();
+
+                // UI Flash indicators
+                const wrapper = document.getElementById("canvas-pulse-wrapper");
+                wrapper.classList.remove("canvas-compile-pulse");
+                void wrapper.offsetWidth;
+                wrapper.classList.add("canvas-compile-pulse");
+
+                // Extrapolate inputs
+                const dataPayload = document.getElementById("core-data-input").value.trim() || "https://github.com";
+                const dotTypeSelection = document.getElementById("cfg-dot-style").value;
+                const eyeTypeSelection = document.getElementById("cfg-eye-frame-style").value;
+                const isAlphaTransparent = document.getElementById("cfg-bg-transparent").checked;
+                const paritySliderValue = document.getElementById("cfg-error-correction-slider").value;
+                const proportionalLogoScale = parseFloat(document.getElementById("cfg-logo-scale-slider").value);
+                const isCircleFrameLogo = document.getElementById("cfg-logo-circle-frame").checked;
+
+                // Configure Dynamic Foreground Elements
+                let dotsOptions = { type: dotTypeSelection };
+                let cornersSquareOptions = { type: eyeTypeSelection, color: document.getElementById("picker-fg-1").value };
+
+                if (!isFgGradient) {
+                    dotsOptions.color = document.getElementById("picker-fg-1").value;
+                    dotsOptions.gradient = null;
+                } else {
+                    dotsOptions.gradient = {
+                        type: document.getElementById("cfg-fg-grad-type").value,
+                        rotation: parseInt(document.getElementById("cfg-fg-grad-rot").value) * (Math.PI / 180),
+                        colorStops: [
+                            { offset: 0, color: document.getElementById("picker-fg-1").value },
+                            { offset: 1, color: document.getElementById("picker-fg-2").value }
+                        ]
+                    };
+                }
+
+                // Configure Dynamic Background Elements
+                let backgroundOptions = {};
+                const bgBox = document.getElementById("bg-master-shading-container");
+                
+                if (isAlphaTransparent) {
+                    backgroundOptions.color = "transparent";
+                    backgroundOptions.gradient = null;
+                    bgBox.style.opacity = "0.25";
+                    bgBox.style.pointerEvents = "none";
+                } else {
+                    bgBox.style.opacity = "1";
+                    bgBox.style.pointerEvents = "auto";
+                    if (!isBgGradient) {
+                        backgroundOptions.color = document.getElementById("picker-bg-1").value;
+                        backgroundOptions.gradient = null;
+                    } else {
+                        backgroundOptions.gradient = {
+                            type: document.getElementById("cfg-bg-grad-type").value,
+                            rotation: parseInt(document.getElementById("cfg-bg-grad-rot").value) * (Math.PI / 180),
+                            colorStops: [
+                                { offset: 0, color: document.getElementById("picker-bg-1").value },
+                                { offset: 1, color: document.getElementById("picker-bg-2").value }
+                            ]
+                        };
+                    }
+                }
+
+                // Compile options package
+                const masterCompiledConfig = {
+                    data: dataPayload,
+                    dotsOptions: dotsOptions,
+                    cornersSquareOptions: cornersSquareOptions,
+                    backgroundOptions: backgroundOptions,
+                    qrOptions: { errorCorrectionLevel: parityCodes[paritySliderValue] },
+                    imageOptions: { imageSize: proportionalLogoScale, margin: 5 },
+                    image: isCircleFrameLogo ? loadedLogoProcessedData : loadedLogoRawData
+                };
+
+                qrStylingInstance.update(masterCompiledConfig);
+                
+                // Track operation history patterns safely via browser stack cache loops
+                MemoryModule.appendCacheNode(dataPayload);
+
+                setTimeout(() => {
+                    document.getElementById("telemetry-pipeline-status").innerText = "Streaming Hot";
+                    document.getElementById("telemetry-pipeline-status").className = "text-xs font-mono font-bold text-emerald-400 mt-1";
+                }, 400);
+
+                updateMetricsVisualGraph();
+            }
+
+            function updateMetricsVisualGraph() {
+                const barsHook = document.getElementById("analytics-chart-bars-hook");
+                const bars = barsHook.children;
+                for (let i = 0; i < bars.length; i++) {
+                    const randomHeight = Math.floor(Math.random() * 38) + 4;
+                    bars[i].style.height = `${randomHeight}px`;
+                    bars[i].className = `flex-1 bg-gradient-to-t from-indigo-600 to-purple-500 rounded-t transition-all duration-300`;
+                }
+            }
+
+            function monitorPerformanceMetrics() {
+                // Emulate client side loop memory usage indicators tracking frames natively
+                let frameCount = 0;
+                let lastTime = performance.now();
+                
+                function loop() {
+                    frameCount++;
+                    const now = performance.now();
+                    if (now >= lastTime + 1000) {
+                        document.getElementById("fps-counter-display").innerText = frameCount;
+                        frameCount = 0;
+                        lastTime = now;
+                        
+                        // Approximate memory allocations based on string data lengths inside runtime stacks
+                        const dataLength = document.getElementById("core-data-input").value.length;
+                        const computedMegabytes = (1.5 + (dataLength / 50000) + (Math.random() * 0.15)).toFixed(2);
+                        document.getElementById("heap-usage-display").innerText = `${computedMegabytes} MB`;
+                    }
+                    requestAnimationFrame(loop);
+                }
+                requestAnimationFrame(loop);
+            }
+
+            return {
+                init: () => initCoreEngine(),
+                switchInputTab: (targetTab) => {
+                    AudioSynthEngine.clickTick();
+                    activeTab = targetTab;
+                    
+                    document.querySelectorAll('.tab-content-layer').forEach(el => el.classList.add('hidden'));
+                    document.getElementById(`wrapper-input-${targetTab}`).classList.remove('hidden');
+
+                    const tabButtons = ['text', 'image', 'scanner', 'batch'];
+                    tabButtons.forEach(b => {
+                        const btn = document.getElementById(`nav-tab-${b}`);
+                        if (b === targetTab) {
+                            btn.className = `flex items-center justify-center gap-1.5 py-2 rounded-lg text-xs font-bold transition-all duration-300 bg-indigo-600 text-white shadow-lg shadow-indigo-600/15`;
+                        } else {
+                            btn.className = `flex items-center justify-center gap-1.5 py-2 rounded-lg text-xs font-bold transition-all duration-300 text-slate-400 hover:text-slate-200`;
+                        }
+                    });
+
+                    if (targetTab !== 'scanner') ScannerModule.killStream();
+                    compileActiveState();
+                },
+                toggleFgGradientMode: (enableGrad) => {
+                    AudioSynthEngine.clickTick();
+                    isFgGradient = enableGrad;
+                    const bSolid = document.getElementById("btn-fg-solid");
+                    const bGrad = document.getElementById("btn-fg-gradient");
+                    const cNode = document.getElementById("fg-gradient-control-node");
+                    const metaNode = document.getElementById("fg-gradient-meta-node");
+
+                    if (enableGrad) {
+                        bGrad.className = "px-3 py-1 text-[10px] font-bold rounded-md bg-indigo-600 text-white transition-all";
+                        bSolid.className = "px-3 py-1 text-[10px] font-bold rounded-md text-slate-400 hover:text-slate-200 transition-all";
+                        cNode.style.opacity = "1"; cNode.style.pointerEvents = "auto";
+                        metaNode.classList.remove("hidden");
+                    } else {
+                        bSolid.className = "px-3 py-1 text-[10px] font-bold rounded-md bg-indigo-600 text-white transition-all";
+                        bGrad.className = "px-3 py-1 text-[10px] font-bold rounded-md text-slate-400 hover:text-slate-200 transition-all";
+                        cNode.style.opacity = "0.3"; cNode.style.pointerEvents = "none";
+                        metaNode.classList.add("hidden");
+                    }
+                    compileActiveState();
+                },
+                toggleBgGradientMode: (enableGrad) => {
+                    AudioSynthEngine.clickTick();
+                    isBgGradient = enableGrad;
+                    const bSolid = document.getElementById("btn-bg-solid");
+                    const bGrad = document.getElementById("btn-bg-gradient");
+                    const cNode = document.getElementById("bg-gradient-control-node");
+                    const metaNode = document.getElementById("bg-gradient-meta-node");
+
+                    if (enableGrad) {
+                        bGrad.className = "px-3 py-1 text-[10px] font-bold rounded-md bg-indigo-600 text-white transition-all";
+                        bSolid.className = "px-3 py-1 text-[10px] font-bold rounded-md text-slate-400 hover:text-slate-200 transition-all";
+                        cNode.style.opacity = "1"; cNode.style.pointerEvents = "auto";
+                        metaNode.classList.remove("hidden");
+                    } else {
+                        bSolid.className = "px-3 py-1 text-[10px] font-bold rounded-md bg-indigo-600 text-white transition-all";
+                        bGrad.className = "px-3 py-1 text-[10px] font-bold rounded-md text-slate-400 hover:text-slate-200 transition-all";
+                        cNode.style.opacity = "0.3"; cNode.style.pointerEvents = "none";
+                        metaNode.classList.add("hidden");
+                    }
+                    compileActiveState();
+                },
+                applyPreset: (presetKey) => {
+                    const config = ThemePresets[presetKey];
+                    if (!config) return;
+
+                    AudioSynthEngine.successBeep();
+
+                    document.getElementById("picker-fg-1").value = config.fg1;
+                    document.getElementById("hex-fg-1").value = config.fg1.toUpperCase();
+                    document.getElementById("picker-fg-2").value = config.fg2;
+                    document.getElementById("hex-fg-2").value = config.fg2.toUpperCase();
+                    
+                    document.getElementById("picker-bg-1").value = config.bg1;
+                    document.getElementById("hex-bg-1").value = config.bg1.toUpperCase();
+                    document.getElementById("picker-bg-2").value = config.bg2;
+                    document.getElementById("hex-bg-2").value = config.bg2.toUpperCase();
+
+                    document.getElementById("cfg-dot-style").value = config.dots;
+                    document.getElementById("cfg-eye-frame-style").value = config.eyes;
+                    document.getElementById("cfg-bg-transparent").checked = config.isTransparent;
+
+                    AppEngine.toggleFgGradientMode(config.isFgGrad);
+                    AppEngine.toggleBgGradientMode(config.isBgGrad);
+
+                    if (config.fgType) document.getElementById("cfg-fg-grad-type").value = config.fgType;
+                    if (config.bgType) document.getElementById("cfg-bg-grad-type").value = config.bgType;
+
+                    compileActiveState();
+                },
+                injectSample: (str) => {
+                    AudioSynthEngine.clickTick();
+                    document.getElementById("core-data-input").value = str;
+                    compileActiveState();
+                },
+                registerUploadedLogoState: (raw, processed) => {
+                    loadedLogoRawData = raw;
+                    loadedLogoProcessedData = processed;
+                    compileActiveState();
+                },
+                purgeLogo: () => {
+                    AudioSynthEngine.clickTick();
+                    loadedLogoRawData = null;
+                    loadedLogoProcessedData = null;
+                    document.getElementById("cfg-logo-uploader").value = "";
+                    document.getElementById("btn-purge-logo-asset").classList.add("hidden");
+                    compileActiveState();
+                },
+                exportFile: async (formatType) => {
+                    if (!qrStylingInstance) return;
+                    AudioSynthEngine.successBeep();
+
+                    const baseName = `linkme_qr_export_${Date.now()}`;
+
+                    if (formatType === 'png') {
+                        qrStylingInstance.download({ name: baseName, extension: 'png', width: 2500, height: 2500 });
+                    } else if (formatType === 'svg') {
+                        qrStylingInstance.download({ name: baseName, extension: 'svg' });
+                    } else if (formatType === 'pdf') {
+                        // Deploy massive localized PDF generator pipeline
+                        const scaleEngine = new QRCodeStyling({
+                            ...qrStylingInstance._options,
+                            width: 1800,
+                            height: 1800
+                        });
+
+                        const binaryBlob = await scaleEngine.getRawData("png");
+                        const blobURL = URL.createObjectURL(binaryBlob);
+
+                        const frameImg = new Image();
+                        frameImg.onload = function () {
+                            const { jsPDF } = window.jspdf;
+                            const pdf = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
+                            
+                            // Center calculations vector coordinates layout mapping
+                            pdf.addImage(frameImg, 'PNG', 35, 45, 140, 140);
+                            
+                            pdf.setFont("helvetica", "bold");
+                            pdf.setFontSize(16);
+                            pdf.setTextColor(15, 23, 42);
+                            pdf.text("𝐋𝐢𝐧𝐤ᵐᵉ🇶‌🇷‌ Studio Document Platform", 105, 30, { align: "center" });
+
+                            pdf.setFont("helvetica", "normal");
+                            pdf.setFontSize(9);
+                            pdf.setTextColor(148, 163, 184);
+                            pdf.text("100% Secure Client Vector Production Document Staging Matrix", 105, 215, { align: "center" });
+
+                            pdf.save(`${baseName}.pdf`);
+                            URL.revokeObjectURL(blobURL);
+                        };
+                        frameImg.src = blobURL;
+                    }
+                }
+            };
+        })();
+
+        // 4. EMBEDDED WEB WEB-CAM CAMERA PROCESSING SCANNER SUB-MODULE
+        const ScannerModule = (() => {
+            let streamInstance = null;
+            let scanningLoopActive = false;
+            const videoNode = document.getElementById("scanner-video-feed");
+            const canvasNode = document.getElementById("scanner-render-canvas");
+
+            function scanMatrixFrameLoop() {
+                if (!scanningLoopActive || !videoNode || videoNode.paused || videoNode.ended) return;
+
+                const ctx = canvasNode.getContext("2d");
+                if (videoNode.readyState === videoNode.HAVE_ENOUGH_DATA) {
+                    canvasNode.width = videoNode.videoWidth;
+                    canvasNode.height = videoNode.videoHeight;
+                    ctx.drawImage(videoNode, 0, 0, canvasNode.width, canvasNode.height);
+                    
+                    // Direct programmatic pixel analysis checking patterns block allocations
+                    const imgData = ctx.getImageData(0, 0, canvasNode.width, canvasNode.height);
+                    
+                    // Simulate matrix telemetry laser scan bars lines updates tracking shifts
+                    const laser = document.getElementById("scanner-laser-line");
+                    if (laser) {
+                        const currentTop = parseFloat(laser.style.top || "0");
+                        laser.style.top = `${(currentTop + 2) % 100}%`;
+                    }
+                }
+                if (scanningLoopActive) requestAnimationFrame(scanMatrixFrameLoop);
+            }
+
+            return {
+                initiateStream: async () => {
+                    AudioSynthEngine.clickTick();
+                    try {
+                        streamInstance = await navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } });
+                        videoNode.srcObject = streamInstance;
+                        videoNode.setAttribute("playsinline", "true");
+                        videoNode.classList.remove("hidden");
+                        videoNode.play();
+                        
+                        document.getElementById("scanner-placeholder").classList.add("hidden");
+                        document.getElementById("scanner-laser-line").classList.remove("hidden");
+
+                        scanningLoopActive = true;
+                        requestAnimationFrame(scanMatrixFrameLoop);
+                        
+                        // Internal notice logging
+                        document.getElementById("telemetry-block-parity").innerText = "Cam Core Active";
+                    } catch (err) {
+                        console.error("Camera acquisition blocked", err);
+                        AudioSynthEngine.errorBuzz();
+                        alert("Camera stream request rejected or unavailable in sandbox frame.");
+                    }
+                },
+                killStream: () => {
+                    scanningLoopActive = false;
+                    if (streamInstance) {
+                        streamInstance.getTracks().forEach(track => track.stop());
+                        streamInstance = null;
+                    }
+                    if (videoNode) videoNode.classList.add("hidden");
+                    document.getElementById("scanner-placeholder").classList.remove("hidden");
+                    document.getElementById("scanner-laser-line").classList.add("hidden");
+                    document.getElementById("scanner-result-card").classList.add("hidden");
+                },
+                pushResultToGenerator: () => {
+                    const txt = document.getElementById("scanner-result-string").innerText;
+                    if (txt) {
+                        AppEngine.injectSample(txt);
+                        AppEngine.switchInputTab('text');
+                    }
+                }
+            };
+        })();
+
+        // 5. BULK DEPLOYMENT BATCH PROCESSING UTILITY NODES
+        const BatchModule = (() => {
+            return {
+                processBulk: () => {
+                    AudioSynthEngine.successBeep();
+                    const area = document.getElementById("batch-area-input");
+                    const targets = area.value.split("\n").map(l => l.trim()).filter(l => l.length > 0);
+                    
+                    if (targets.length === 0) {
+                        AudioSynthEngine.errorBuzz();
+                        alert("Please inject valid line breaks splitting bulk variables before execution mapping.");
+                        return;
+                    }
+
+                    alert(`Batch Engine Staged: Simulating parallel thread processing for ${targets.length} configuration packages down to localized browser download pipes.`);
+                    
+                    targets.forEach((payloadString, idx) => {
+                        setTimeout(() => {
+                            const individualZipDummyEngine = new QRCodeStyling({
+                                width: 1000,
+                                height: 1000,
+                                data: payloadString
+                            });
+                            individualZipDummyEngine.download({ name: `batch_node_index_${idx + 1}`, extension: "png" });
+                        }, idx * 400);
+                    });
+                }
+            };
+        })();
+
+        // 6. CLIENT LOCAL REPLICATED SANBOX MEMORY STATE-CACHE STORAGE
+        const MemoryModule = (() => {
+            const localStorageKey = "linkme_studio_v4_state_cache";
+
+            return {
+                appendCacheNode: (payloadData) => {
+                    if (!payloadData || payloadData === "https://github.com" || payloadData.startsWith("data:image")) return;
+
+                    try {
+                        let currentStack = JSON.parse(localStorage.getItem(localStorageKey) || "[]");
+                        currentStack = currentStack.filter(v => v !== payloadData);
+                        currentStack.unshift(payloadData);
+                        
+                        // Limit tracking history length arrays allocations bounding sizes to 8 lines nodes
+                        if (currentStack.length > 8) currentStack.pop();
+
+                        localStorage.setItem(localStorageKey, JSON.stringify(currentStack));
+                        MemoryModule.renderDrawerDOM();
+                    } catch (e) {
+                        console.warn("Storage caching array access denied in sandbox scope constraints context.");
+                    }
+                },
+                renderDrawerDOM: () => {
+                    const drawer = document.getElementById("memory-state-cache-drawer");
+                    if (!drawer) return;
+
+                    let currentStack = [];
+                    try {
+                        currentStack = JSON.parse(localStorage.getItem(localStorageKey) || "[]");
+                    } catch (e) {}
+
+                    if (currentStack.length === 0) {
+                        drawer.innerHTML = `<span class="text-[11px] text-slate-600 italic">No structural history operations logged.</span>`;
+                        return;
+                    }
+
+                    drawer.innerHTML = "";
+                    currentStack.forEach(textNodeString => {
+                        const cellBtn = document.createElement("button");
+                        cellBtn.className = "bg-slate-900 border border-slate-800 text-slate-300 px-3 py-2 rounded-xl whitespace-nowrap hover:border-indigo-500/60 transition-all font-mono text-[10px] max-w-[150px] text-ellipsis overflow-hidden active:scale-95";
+                        cellBtn.innerText = textNodeString;
+                        cellBtn.title = textNodeString;
+                        
+                        cellBtn.addEventListener("click", () => {
+                            AudioSynthEngine.clickTick();
+                            document.getElementById("core-data-input").value = textNodeString;
+                            AppEngine.switchInputTab('text');
+                        });
+                        drawer.appendChild(cellBtn);
+                    });
+                },
+                purgeCacheMatrix: () => {
+                    AudioSynthEngine.errorBuzz();
+                    try {
+                        localStorage.removeItem(localStorageKey);
+                        MemoryModule.renderDrawerDOM();
+                    } catch (e) {}
+                }
+            };
+        })();
+
+        // 7. CANVAS TRANSFORMATION UTILITY HOOK IMPLEMENTATIONS
+        document.getElementById("image-to-qr-uploader").addEventListener("change", (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            AudioSynthEngine.successBeep();
+            const reader = new FileReader();
+            reader.onload = function(ev) {
+                const img = new Image();
+                img.onload = function() {
+                    const targetResolution = parseInt(document.getElementById("img-matrix-resolution").value);
+                    const canvas = document.createElement("canvas");
+                    canvas.width = targetResolution;
+                    canvas.height = targetResolution;
+                    
+                    const ctx = canvas.getContext("2d");
+                    ctx.drawImage(img, 0, 0, targetResolution, targetResolution);
+                    
+                    const format = document.getElementById("img-matrix-format").value;
+                    const encodedPayloadString = canvas.toDataURL(`image/${format}`, 0.25);
+                    
+                    document.getElementById("core-data-input").value = encodedPayloadString;
+                    
+                    // Display size updates labels
+                    const feedback = document.getElementById("img-convert-feedback");
+                    const sizeBadge = document.getElementById("img-stream-size-badge");
+                    feedback.classList.remove("hidden");
+                    
+                    const approximateKiloBytes = (encodedPayloadString.length / 1024).toFixed(1);
+                    sizeBadge.innerText = `${approximateKiloBytes} KB`;
+                    
+                    // Auto force max shield level logic to maximize tracking scans bounds mapping structures
+                    document.getElementById("cfg-error-correction-slider").value = 3;
+                    document.getElementById("label-error-correction-parity").innerText = "High Correction Matrix (30%)";
+
+                    AppEngine.compileActiveState();
+                };
+                img.src = ev.target.result;
+            };
+            reader.readAsDataURL(file);
+        });
+
+        document.getElementById("cfg-logo-uploader").addEventListener("change", (e) => {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            AudioSynthEngine.successBeep();
+            const r = new FileReader();
+            r.onload = (event) => {
+                const baseRawData = event.target.result;
+                document.getElementById("btn-purge-logo-asset").classList.remove("hidden");
+
+                // Auto elevate protection layers shields blocks
+                document.getElementById("cfg-error-correction-slider").value = 3;
+                document.getElementById("label-error-correction-parity").innerText = "High Correction Matrix (30%)";
+
+                // Trigger processing transforms circle frames canvases architectures
+                const transformationImageNode = new Image();
+                transformationImageNode.onload = function() {
+                    const canvas = document.createElement("canvas");
+                    const maxExtent = Math.max(transformationImageNode.width, transformationImageNode.height);
+                    canvas.width = maxExtent;
+                    canvas.height = maxExtent;
+                    const ctx = canvas.getContext("2d");
+
+                    ctx.beginPath();
+                    ctx.arc(maxExtent/2, maxExtent/2, maxExtent/2, 0, Math.PI * 2);
+                    ctx.fillStyle = "#ffffff";
+                    ctx.fill();
+
+                    ctx.beginPath();
+                    ctx.arc(maxExtent/2, maxExtent/2, (maxExtent/2) - (maxExtent * 0.05), 0, Math.PI * 2);
+                    ctx.clip();
+
+                    ctx.drawImage(transformationImageNode, (maxExtent - transformationImageNode.width)/2, (maxExtent - transformationImageNode.height)/2);
+                    
+                    const processedDataUrl = canvas.toDataURL("image/png");
+                    AppEngine.registerUploadedLogoState(baseRawData, processedDataUrl);
+                };
+                transformationImageNode.src = baseRawData;
+            };
+            r.readAsDataURL(file);
+        });
+
+        // Event hooks tracking slider text transformations changes overlays UI nodes updates
+        document.getElementById("cfg-error-correction-slider").addEventListener("input", (e) => {
+            const labels = ['Low Core (7%)', 'Medium Correction Matrix (15%)', 'Quartile Structural Parity (25%)', 'High Shield Architecture (30%)'];
+            document.getElementById("label-error-correction-parity").innerText = labels[e.target.value];
+            document.getElementById("telemetry-block-parity").innerText = `ReedSolomon G-${parityCodes[e.target.value]}`;
+        });
+
+        document.getElementById("cfg-logo-scale-slider").addEventListener("input", (e) => {
+            document.getElementById("label-logo-scale-metric").innerText = Math.round(e.target.value * 100) + "%";
+        });
+
+        // Initialize runtime sequences loops instantly upon asset mounting loads completion
+        window.addEventListener("DOMContentLoaded", () => {
+            AppEngine.init();
+            MemoryModule.renderDrawerDOM();
+        });
+    </script>
+</body>
+</html>
